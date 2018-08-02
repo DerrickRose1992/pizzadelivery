@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="pizza-list">
+    <mat-card class="pizza-card" class="cursor-hover" (click)="addToOrder(pizza)" *ngFor="let pizza of pizzas">
+      <h4>{{pizza.name}}</h4>
+      <mat-card-subtitle>
+        <p class="price">{{pizza.price | currency}}</p></mat-card-subtitle>
+    </mat-card>
+  </div>
+  <app-orderlist [total]="total" (orderChange)="this.order = $event" *ngIf="order.length > 0" [order]="order" class="order-list">
+  </app-orderlist>
+</div>

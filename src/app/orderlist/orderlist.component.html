@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-title>Your Order:</mat-card-title>
+  <mat-card-content>
+    <p *ngFor="let item of order">{{item.amount}}x {{item.pizza.name}} {{item.pizza.price | currency}}
+      <mat-icon (click)="removeFromOrder(item.pizza)">delete</mat-icon>
+    </p>
+    <h2>Total: {{total | currency}}</h2>
+
+    <h3>Note:</h3>
+      <textarea name="" [(ngModel)]="note" id="" cols="30" rows="10"></textarea>
+    {{note}}
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="clearOrder()">Clear</button>
+    <button mat-raised-button color="primary" class="send-button" (click)="sendOrder()">Send</button>
+  </mat-card-actions>
+</mat-card>
+

@@ -1,0 +1,12 @@
+.container{
+  flex-wrap: nowrap;
+  display:flex;
+}
+
+.pizza-list{
+  flex: 8;
+  margin:16px;
+}
+.order-list{
+  flex: 4;
+}
