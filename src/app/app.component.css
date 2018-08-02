@@ -1,0 +1,20 @@
+
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.crop {
+  height: 200px;
+  width: 100%;
+}
+
+.pizza-image {
+  height: 200px;
+}
+
+mat-toolbar{
+  background:#d62026;
+  color:white;
+  box-shadow: 1px 1px 20px black;
+}

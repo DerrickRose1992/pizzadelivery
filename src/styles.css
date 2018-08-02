@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body{
+  margin:0px;
+  background-image: url('./assets/pizza.jpg');
+}
+.cursor-hover:hover {
+  cursor: pointer;
+}
+
+.cursor-hover:hover {
+  cursor: pointer;
+}
+
+mat-card.cursor-hover:hover{
+  background:#f3f3f3;
+}

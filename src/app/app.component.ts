@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
+import {Pizza} from "./models/Pizza";
+import {PizzaItem} from "./models/PizzaItem";
+import {OrderService} from "../services/order.service";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  constructor() {
+  }
 }
